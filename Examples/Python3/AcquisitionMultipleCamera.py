@@ -233,18 +233,7 @@ def run_multiple_cameras(cam_list):
 
             # Initialize camera
             cam.Init()
-            #--------------------------------------------------------------------------------
-            #JW 1/10/21 Edit to Adjust Frame Rate
-            nodemap_applayer = cam.GetNodeMap()
-            #enable frame rate boolean
-            
-            node_fps_enable = PySpin.CBooleanPtr(nodemap_applayer.GetNode("AcquisitionFrameRateEnable"))
-            node_fps_enable.SetValue(True)
-            #change frame rate
-            node_fps = PySpin.CFloatPtr(nodemap_applayer.GetNode("AcquisitionFrameRate"))
-            node_fps.SetValue(100.0)
-            print("Changing Frame Rate Acquisition to 100.0")
-            #--------------------------------------------------------------------------------
+
         # Acquire images on all cameras
         result &= acquire_images(cam_list)
 
