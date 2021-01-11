@@ -209,7 +209,7 @@ def run_multiple_cameras(cam_list):
         # serial number. Rather than caching the nodem#ap, each nodemap is
         # retrieved both times as needed.
         print('*** DEVICE INFORMATION ***\n')
-
+        
         for i, cam in enumerate(cam_list):
 
             # Retrieve TL device nodemap

@@ -119,7 +119,7 @@ def configure_trigger(cam):
             print('Trigger source set to software...')
 
         elif CHOSEN_TRIGGER == TriggerType.HARDWARE:
-            node_trigger_source_hardware = node_trigger_source.GetEntryByName('Line0')
+            node_trigger_source_hardware = node_trigger_source.GetEntryByName('Line3')
             if not PySpin.IsAvailable(node_trigger_source_hardware) or not PySpin.IsReadable(
                     node_trigger_source_hardware):
                 print('Unable to set trigger source (enum entry retrieval). Aborting...')
