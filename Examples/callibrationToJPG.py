@@ -48,7 +48,7 @@ for file in cam2_glob_results:
 
     os.chdir("../" + CAM2_NEW_DIRECTORY)
 
-    cv2.imwrite("camera-1-" + str(cam2count) + ".jpg", img)
+    cv2.imwrite("camera-2-" + str(cam2count) + ".jpg", img)
 
     os.chdir("../" + CAM2_DIRECTORY_NAME)
     cam2count = cam2count + 1
