@@ -21,7 +21,10 @@ cam1_glob_results = sorted(glob.glob("*.jpg"))
 
 for file in cam1_glob_results:
     print(file + str(cam1count))
-    os.rename(file, "camera-1-"+str(cam1count)+".jpg")
+    if cam1count < 10:
+        os.rename(file, "camera-1-0"+str(cam1count)+".jpg")
+    else:
+        os.rename(file, "camera-1-"+str(cam1count)+".jpg")
     cam1count = cam1count + 1
 
 os.chdir(Cam2_DIRECTORY_PATH)
@@ -29,7 +32,10 @@ cam2_glob_results = sorted(glob.glob("*.jpg"))
 
 for file in cam2_glob_results:
     print(file + str(cam2count))
-    os.rename(file, "camera-2-"+str(cam2count)+".jpg")
+    if cam2count < 10:
+        os.rename(file, "camera-2-0"+str(cam2count)+".jpg")
+    else:
+        os.rename(file, "camera-2-"+str(cam2count)+".jpg")
     cam2count = cam2count + 1
 
 print("Renaming Complete.")

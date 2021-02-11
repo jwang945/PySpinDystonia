@@ -5,9 +5,9 @@ import numpy as np
 import glob
 
 #VARIABLES TO CHANGE
-CAM1_DIRECTORY_NAME = "Calibration_Primary"
-CAM2_DIRECTORY_NAME = "Calibration_Secondary"
-DIRECTORY_PATH = "/Volumes/Extreme_SSD/1_26_21/"
+CAM1_DIRECTORY_NAME = "Calibration_Primary_2"
+CAM2_DIRECTORY_NAME = "Calibration_Secondary_2"
+DIRECTORY_PATH = "/Volumes/Extreme_SSD/2_7_21/"
 IMG_HEIGHT = 1080
 IMG_WIDTH = 1440
 MONOCHROME = True
